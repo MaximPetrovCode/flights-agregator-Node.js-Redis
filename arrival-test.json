@@ -1,0 +1,1945 @@
+{
+    "request": {
+     "airport": {
+      "requestedCode": "svx",
+      "fsCode": "SVX"
+     },
+     "date": {
+      "year": "2017",
+      "month": "9",
+      "day": "4",
+      "interpreted": "2017-09-04"
+     },
+     "hourOfDay": {
+      "requested": "4",
+      "interpreted": 4
+     },
+     "numHours": {
+      "requested": "6",
+      "interpreted": 6
+     },
+     "utc": {
+      "requested": "false",
+      "interpreted": false
+     },
+     "codeType": {},
+     "maxFlights": {},
+     "extendedOptions": {},
+     "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/airport/status/svx/arr/2017/9/4/4"
+    },
+    "appendix": {
+     "airlines": [
+      {
+       "fs": "U6",
+       "iata": "U6",
+       "icao": "SVR",
+       "name": "Ural Airlines",
+       "active": true
+      },
+      {
+       "fs": "KL",
+       "iata": "KL",
+       "icao": "KLM",
+       "name": "KLM",
+       "phoneNumber": "1-800-447-4747",
+       "active": true
+      },
+      {
+       "fs": "QR",
+       "iata": "QR",
+       "icao": "QTR",
+       "name": "Qatar Airways",
+       "phoneNumber": "+1 877 777 2827",
+       "active": true
+      },
+      {
+       "fs": "AB",
+       "iata": "AB",
+       "icao": "BER",
+       "name": "Air Berlin",
+       "phoneNumber": "+49 030 3434 3434",
+       "active": true
+      },
+      {
+       "fs": "SU",
+       "iata": "SU",
+       "icao": "AFL",
+       "name": "Aeroflot",
+       "phoneNumber": "+7 495 223-55-55",
+       "active": true
+      },
+      {
+       "fs": "JL",
+       "iata": "JL",
+       "icao": "JAL",
+       "name": "JAL",
+       "phoneNumber": "0120-25-5931",
+       "active": true
+      },
+      {
+       "fs": "S7",
+       "iata": "S7",
+       "icao": "SBI",
+       "name": "S7 Airlines",
+       "phoneNumber": "8-800-200-000-7",
+       "active": true
+      },
+      {
+       "fs": "AF",
+       "iata": "AF",
+       "icao": "AFR",
+       "name": "Air France",
+       "phoneNumber": "1-800-237-2747",
+       "active": true
+      },
+      {
+       "fs": "EK",
+       "iata": "EK",
+       "icao": "UAE",
+       "name": "Emirates",
+       "phoneNumber": "800 777 3999",
+       "active": true
+      },
+      {
+       "fs": "O7",
+       "iata": "O7",
+       "icao": "ORG",
+       "name": "Orenburzhye",
+       "active": true
+      },
+      {
+       "fs": "LY",
+       "iata": "LY",
+       "icao": "ELY",
+       "name": "El Al",
+       "phoneNumber": "+ 972-3-9771111",
+       "active": true
+      },
+      {
+       "fs": "FV",
+       "iata": "FV",
+       "icao": "SDM",
+       "name": "Rossiya Airlines",
+       "phoneNumber": "+812 333-22-22",
+       "active": true
+      },
+      {
+       "fs": "B2",
+       "iata": "B2",
+       "icao": "BRU",
+       "name": "Belavia",
+       "active": true
+      },
+      {
+       "fs": "A3",
+       "iata": "A3",
+       "icao": "AEE",
+       "name": "Aegean Airlines",
+       "phoneNumber": "+30 210 6261000",
+       "active": true
+      },
+      {
+       "fs": "TK",
+       "iata": "TK",
+       "icao": "THY",
+       "name": "Turkish Airlines",
+       "phoneNumber": "+90 212 444 0 849",
+       "active": true
+      },
+      {
+       "fs": "AY",
+       "iata": "AY",
+       "icao": "FIN",
+       "name": "Finnair",
+       "phoneNumber": "+ 358 600 140 140",
+       "active": true
+      },
+      {
+       "fs": "7R",
+       "iata": "7R",
+       "icao": "RLU",
+       "name": "RusLine",
+       "active": true
+      },
+      {
+       "fs": "OK",
+       "iata": "OK",
+       "icao": "CSA",
+       "name": "CSA",
+       "phoneNumber": "+1 (866) 293-8702",
+       "active": true
+      },
+      {
+       "fs": "FC",
+       "iata": "N7",
+       "icao": "FCM",
+       "name": "Nordic Regional Airlines",
+       "active": true
+      },
+      {
+       "fs": "DP*",
+       "iata": "DP",
+       "icao": "PBD",
+       "name": "Pobeda",
+       "active": true
+      }
+     ],
+     "airports": [
+      {
+       "fs": "DYU",
+       "iata": "DYU",
+       "icao": "UTDD",
+       "name": "Dushanbe Airport",
+       "city": "Dushanbe",
+       "cityCode": "DYU",
+       "countryCode": "TJ",
+       "countryName": "Tajikistan",
+       "regionName": "Asia",
+       "timeZoneRegionName": "Asia/Dushanbe",
+       "localTime": "2017-09-05T18:11:27.220",
+       "utcOffsetHours": 5,
+       "latitude": 38.54894,
+       "longitude": 68.817287,
+       "elevationFeet": 2572,
+       "classification": 4,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/DYU?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/DYU?codeType=fs"
+      },
+      {
+       "fs": "PRG",
+       "iata": "PRG",
+       "icao": "LKPR",
+       "name": "Vaclav Havel Airport Prague",
+       "city": "Prague",
+       "cityCode": "PRG",
+       "countryCode": "CZ",
+       "countryName": "Czech Republic",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Europe/Prague",
+       "localTime": "2017-09-05T15:11:27.211",
+       "utcOffsetHours": 2,
+       "latitude": 50.106188,
+       "longitude": 14.266638,
+       "elevationFeet": 1170,
+       "classification": 2,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/PRG?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/PRG?codeType=fs"
+      },
+      {
+       "fs": "LPK",
+       "iata": "LPK",
+       "name": "Lipetsk Airport",
+       "city": "Lipetsk",
+       "cityCode": "LPK",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Europe/Moscow",
+       "localTime": "2017-09-05T16:11:27.216",
+       "utcOffsetHours": 3,
+       "latitude": 52.703411,
+       "longitude": 39.53822,
+       "elevationFeet": 576,
+       "classification": 4,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/LPK?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/LPK?codeType=fs"
+      },
+      {
+       "fs": "FRU",
+       "iata": "FRU",
+       "icao": "UAFM",
+       "name": "Manas International Airport",
+       "city": "Bishkek",
+       "cityCode": "FRU",
+       "countryCode": "KG",
+       "countryName": "Kyrgyzstan",
+       "regionName": "Asia",
+       "timeZoneRegionName": "Asia/Bishkek",
+       "localTime": "2017-09-05T19:11:27.222",
+       "utcOffsetHours": 6,
+       "latitude": 43.053581,
+       "longitude": 74.469449,
+       "elevationFeet": 2090,
+       "classification": 3,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/FRU?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/FRU?codeType=fs"
+      },
+      {
+       "fs": "PKC",
+       "iata": "PKC",
+       "icao": "UHPP",
+       "name": "Petropavlovsk-Kamchatsky Airport",
+       "city": "Petropavlovsk-Kamchatsky",
+       "cityCode": "PKC",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Asia/Kamchatka",
+       "localTime": "2017-09-06T01:11:27.221",
+       "utcOffsetHours": 12,
+       "latitude": 53.016667,
+       "longitude": 158.65,
+       "elevationFeet": 131,
+       "classification": 4,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/PKC?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/PKC?codeType=fs"
+      },
+      {
+       "fs": "LED",
+       "iata": "LED",
+       "icao": "ULLI",
+       "name": "Pulkovo Airport",
+       "city": "Saint Petersburg",
+       "cityCode": "LED",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Europe/Moscow",
+       "localTime": "2017-09-05T16:11:27.218",
+       "utcOffsetHours": 3,
+       "latitude": 59.799847,
+       "longitude": 30.270505,
+       "elevationFeet": 76,
+       "classification": 2,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/LED?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/LED?codeType=fs"
+      },
+      {
+       "fs": "IST",
+       "iata": "IST",
+       "icao": "LTBA",
+       "name": "Istanbul Ataturk Airport",
+       "city": "Istanbul",
+       "cityCode": "IST",
+       "countryCode": "TR",
+       "countryName": "Turkey",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Europe/Istanbul",
+       "localTime": "2017-09-05T16:11:27.217",
+       "utcOffsetHours": 3,
+       "latitude": 40.976667,
+       "longitude": 28.815278,
+       "elevationFeet": 158,
+       "classification": 1,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/IST?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/IST?codeType=fs"
+      },
+      {
+       "fs": "SVO",
+       "iata": "SVO",
+       "icao": "UUEE",
+       "name": "Sheremetyevo International Airport",
+       "city": "Moscow",
+       "cityCode": "MOW",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Europe/Moscow",
+       "localTime": "2017-09-05T16:11:27.214",
+       "utcOffsetHours": 3,
+       "latitude": 55.966324,
+       "longitude": 37.416574,
+       "elevationFeet": 630,
+       "classification": 1,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/SVO?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/SVO?codeType=fs"
+      },
+      {
+       "fs": "AER",
+       "iata": "AER",
+       "icao": "URSS",
+       "name": "Sochi International Airport",
+       "city": "Adler/Sochi",
+       "cityCode": "AER",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Europe/Moscow",
+       "localTime": "2017-09-05T16:11:27.212",
+       "utcOffsetHours": 3,
+       "latitude": 43.44884,
+       "longitude": 39.941106,
+       "elevationFeet": 89,
+       "classification": 3,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/AER?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/AER?codeType=fs"
+      },
+      {
+       "fs": "HEL",
+       "iata": "HEL",
+       "icao": "EFHK",
+       "name": "Helsinki-Vantaa Airport",
+       "city": "Helsinki",
+       "cityCode": "HEL",
+       "countryCode": "FI",
+       "countryName": "Finland",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Europe/Helsinki",
+       "localTime": "2017-09-05T16:11:27.216",
+       "utcOffsetHours": 3,
+       "latitude": 60.317953,
+       "longitude": 24.966449,
+       "elevationFeet": 167,
+       "classification": 1,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/HEL?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/HEL?codeType=fs"
+      },
+      {
+       "fs": "VVO",
+       "iata": "VVO",
+       "icao": "UHWW",
+       "name": "Vladivostok International Airport",
+       "city": "Vladivostok",
+       "cityCode": "VVO",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Asia/Vladivostok",
+       "localTime": "2017-09-05T23:11:27.221",
+       "utcOffsetHours": 10,
+       "latitude": 43.396342,
+       "longitude": 132.165372,
+       "elevationFeet": 43,
+       "classification": 4,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/VVO?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/VVO?codeType=fs"
+      },
+      {
+       "fs": "IKT",
+       "iata": "IKT",
+       "icao": "UIII",
+       "name": "Irkutsk International Airport",
+       "city": "Irkutsk",
+       "cityCode": "IKT",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Asia/Irkutsk",
+       "localTime": "2017-09-05T21:11:27.221",
+       "utcOffsetHours": 8,
+       "latitude": 52.273309,
+       "longitude": 104.356071,
+       "elevationFeet": 1573,
+       "classification": 3,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/IKT?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/IKT?codeType=fs"
+      },
+      {
+       "fs": "SVX",
+       "iata": "SVX",
+       "icao": "USSS",
+       "name": "Koltsovo International Airport",
+       "city": "Yekaterinburg",
+       "cityCode": "SVX",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Asia/Yekaterinburg",
+       "localTime": "2017-09-05T18:11:27.122",
+       "utcOffsetHours": 5,
+       "latitude": 56.750335,
+       "longitude": 60.804312,
+       "elevationFeet": 764,
+       "classification": 2,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/SVX?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/SVX?codeType=fs"
+      },
+      {
+       "fs": "REN",
+       "iata": "REN",
+       "icao": "UWOO",
+       "name": "Orenburg Airport",
+       "city": "Orenburg",
+       "cityCode": "REN",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Asia/Yekaterinburg",
+       "localTime": "2017-09-05T18:11:27.222",
+       "utcOffsetHours": 5,
+       "latitude": 51.791049,
+       "longitude": 55.456698,
+       "elevationFeet": 387,
+       "classification": 4,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/REN?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/REN?codeType=fs"
+      },
+      {
+       "fs": "VKO",
+       "iata": "VKO",
+       "icao": "UUWW",
+       "name": "Vnukovo Airport",
+       "city": "Moscow",
+       "cityCode": "MOW",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Europe/Moscow",
+       "localTime": "2017-09-05T16:11:27.213",
+       "utcOffsetHours": 3,
+       "latitude": 55.60315,
+       "longitude": 37.292098,
+       "elevationFeet": 686,
+       "classification": 2,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/VKO?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/VKO?codeType=fs"
+      },
+      {
+       "fs": "DME",
+       "iata": "DME",
+       "icao": "UUDD",
+       "name": "Moscow Domodedovo Airport",
+       "city": "Moscow",
+       "cityCode": "MOW",
+       "countryCode": "RU",
+       "countryName": "Russian Federation",
+       "regionName": "Europe",
+       "timeZoneRegionName": "Europe/Moscow",
+       "localTime": "2017-09-05T16:11:27.218",
+       "utcOffsetHours": 3,
+       "latitude": 55.414566,
+       "longitude": 37.899494,
+       "elevationFeet": 587,
+       "classification": 1,
+       "active": true,
+       "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/DME?codeType=fs",
+       "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/DME?codeType=fs"
+      }
+     ],
+     "equipments": [
+      {
+       "iata": "CR2",
+       "name": "Canadair (Bombardier) Regional Jet 200",
+       "turboProp": false,
+       "jet": true,
+       "widebody": false,
+       "regional": true
+      },
+      {
+       "iata": "32A",
+       "name": "Airbus A320 (sharklets)",
+       "turboProp": false,
+       "jet": true,
+       "widebody": false,
+       "regional": false
+      },
+      {
+       "iata": "73H",
+       "name": "Boeing 737-800 (winglets) Passenger/BBJ2",
+       "turboProp": false,
+       "jet": true,
+       "widebody": false,
+       "regional": false
+      },
+      {
+       "iata": "L4T",
+       "name": "Aircraft Industries (LET) 410",
+       "turboProp": true,
+       "jet": false,
+       "widebody": false,
+       "regional": false
+      },
+      {
+       "iata": "320",
+       "name": "Airbus A320",
+       "turboProp": false,
+       "jet": true,
+       "widebody": false,
+       "regional": false
+      },
+      {
+       "iata": "321",
+       "name": "Airbus A321",
+       "turboProp": false,
+       "jet": true,
+       "widebody": false,
+       "regional": false
+      },
+      {
+       "iata": "32R",
+       "name": "??",
+       "turboProp": false,
+       "jet": false,
+       "widebody": false,
+       "regional": false
+      },
+      {
+       "iata": "319",
+       "name": "Airbus A319",
+       "turboProp": false,
+       "jet": true,
+       "widebody": false,
+       "regional": false
+      },
+      {
+       "iata": "738",
+       "name": "Boeing 737-800 Passenger",
+       "turboProp": false,
+       "jet": true,
+       "widebody": false,
+       "regional": false
+      },
+      {
+       "iata": "E90",
+       "name": "Embraer 190",
+       "turboProp": false,
+       "jet": true,
+       "widebody": false,
+       "regional": true
+      }
+     ]
+    },
+    "flightStatuses": [
+     {
+      "flightId": 932267493,
+      "carrierFsCode": "OK",
+      "flightNumber": "912",
+      "departureAirportFsCode": "PRG",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-03T22:00:00.000",
+       "dateUtc": "2017-09-03T20:00:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T05:15:00.000",
+       "dateUtc": "2017-09-04T00:15:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-03T22:00:00.000",
+        "dateUtc": "2017-09-03T20:00:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T05:15:00.000",
+        "dateUtc": "2017-09-04T00:15:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-03T22:00:00.000",
+        "dateUtc": "2017-09-03T20:00:00.000Z"
+       },
+       "estimatedGateDeparture": {
+        "dateLocal": "2017-09-03T21:59:00.000",
+        "dateUtc": "2017-09-03T19:59:00.000Z"
+       },
+       "actualGateDeparture": {
+        "dateLocal": "2017-09-03T21:59:00.000",
+        "dateUtc": "2017-09-03T19:59:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-03T22:12:00.000",
+        "dateUtc": "2017-09-03T20:12:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-03T22:12:00.000",
+        "dateUtc": "2017-09-03T20:12:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T05:15:00.000",
+        "dateUtc": "2017-09-04T00:15:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T05:09:00.000",
+        "dateUtc": "2017-09-04T00:09:00.000Z"
+       },
+       "actualGateArrival": {
+        "dateLocal": "2017-09-04T05:09:00.000",
+        "dateUtc": "2017-09-04T00:09:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T05:05:00.000",
+        "dateUtc": "2017-09-04T00:05:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T05:05:00.000",
+        "dateUtc": "2017-09-04T00:05:00.000Z"
+       }
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 255,
+       "blockMinutes": 250,
+       "airMinutes": 233,
+       "taxiOutMinutes": 13,
+       "taxiInMinutes": 4
+      },
+      "airportResources": {
+       "departureTerminal": "1",
+       "departureGate": "A8"
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "319",
+       "actualEquipmentIataCode": "319",
+       "tailNumber": "OK-PET"
+      }
+     },
+     {
+      "flightId": 932284118,
+      "carrierFsCode": "U6",
+      "flightNumber": "322",
+      "departureAirportFsCode": "AER",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-03T23:30:00.000",
+       "dateUtc": "2017-09-03T20:30:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T04:40:00.000",
+       "dateUtc": "2017-09-03T23:40:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "JY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-03T23:30:00.000",
+        "dateUtc": "2017-09-03T20:30:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T04:40:00.000",
+        "dateUtc": "2017-09-03T23:40:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-03T23:30:00.000",
+        "dateUtc": "2017-09-03T20:30:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-03T23:39:00.000",
+        "dateUtc": "2017-09-03T20:39:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-03T23:39:00.000",
+        "dateUtc": "2017-09-03T20:39:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T04:40:00.000",
+        "dateUtc": "2017-09-03T23:40:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T04:49:00.000",
+        "dateUtc": "2017-09-03T23:49:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T04:26:00.000",
+        "dateUtc": "2017-09-03T23:26:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T04:26:00.000",
+        "dateUtc": "2017-09-03T23:26:00.000Z"
+       }
+      },
+      "delays": {
+       "arrivalGateDelayMinutes": 9
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 190,
+       "airMinutes": 167
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "320",
+       "actualEquipmentIataCode": "320",
+       "tailNumber": "VQ-BDJ"
+      }
+     },
+     {
+      "flightId": 932235236,
+      "carrierFsCode": "DP*",
+      "flightNumber": "407",
+      "departureAirportFsCode": "VKO",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-03T23:50:00.000",
+       "dateUtc": "2017-09-03T20:50:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T04:05:00.000",
+       "dateUtc": "2017-09-03T23:05:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-03T23:50:00.000",
+        "dateUtc": "2017-09-03T20:50:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T04:05:00.000",
+        "dateUtc": "2017-09-03T23:05:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-03T23:50:00.000",
+        "dateUtc": "2017-09-03T20:50:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:01:00.000",
+        "dateUtc": "2017-09-03T21:01:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:01:00.000",
+        "dateUtc": "2017-09-03T21:01:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T04:05:00.000",
+        "dateUtc": "2017-09-03T23:05:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T04:02:00.000",
+        "dateUtc": "2017-09-03T23:02:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T04:00:00.000",
+        "dateUtc": "2017-09-03T23:00:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T04:00:00.000",
+        "dateUtc": "2017-09-03T23:00:00.000Z"
+       }
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 135,
+       "airMinutes": 119
+      },
+      "airportResources": {
+       "departureTerminal": "A",
+       "departureGate": "09A"
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "738",
+       "actualEquipmentIataCode": "73H",
+       "tailNumber": "VQ-BWH"
+      }
+     },
+     {
+      "flightId": 932277040,
+      "carrierFsCode": "SU",
+      "flightNumber": "1408",
+      "departureAirportFsCode": "SVO",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-03T23:50:00.000",
+       "dateUtc": "2017-09-03T20:50:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T04:10:00.000",
+       "dateUtc": "2017-09-03T23:10:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-03T23:50:00.000",
+        "dateUtc": "2017-09-03T20:50:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T04:10:00.000",
+        "dateUtc": "2017-09-03T23:10:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-03T23:50:00.000",
+        "dateUtc": "2017-09-03T20:50:00.000Z"
+       },
+       "estimatedGateDeparture": {
+        "dateLocal": "2017-09-03T23:52:00.000",
+        "dateUtc": "2017-09-03T20:52:00.000Z"
+       },
+       "actualGateDeparture": {
+        "dateLocal": "2017-09-03T23:52:00.000",
+        "dateUtc": "2017-09-03T20:52:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:07:00.000",
+        "dateUtc": "2017-09-03T21:07:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:07:00.000",
+        "dateUtc": "2017-09-03T21:07:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T04:10:00.000",
+        "dateUtc": "2017-09-03T23:10:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T04:10:00.000",
+        "dateUtc": "2017-09-03T23:10:00.000Z"
+       },
+       "actualGateArrival": {
+        "dateLocal": "2017-09-04T04:10:00.000",
+        "dateUtc": "2017-09-03T23:10:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T04:05:00.000",
+        "dateUtc": "2017-09-03T23:05:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T04:05:00.000",
+        "dateUtc": "2017-09-03T23:05:00.000Z"
+       }
+      },
+      "codeshares": [
+       {
+        "fsCode": "AF",
+        "flightNumber": "4946",
+        "relationship": "L"
+       },
+       {
+        "fsCode": "KL",
+        "flightNumber": "3234",
+        "relationship": "L"
+       }
+      ],
+      "delays": {
+       "departureGateDelayMinutes": 2
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 140,
+       "blockMinutes": 138,
+       "airMinutes": 118,
+       "taxiOutMinutes": 15,
+       "taxiInMinutes": 5
+      },
+      "airportResources": {
+       "departureTerminal": "D",
+       "departureGate": "21"
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "321",
+       "actualEquipmentIataCode": "321",
+       "tailNumber": "VP-BUM"
+      }
+     },
+     {
+      "flightId": 932235222,
+      "carrierFsCode": "DP*",
+      "flightNumber": "339",
+      "departureAirportFsCode": "AER",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-03T23:50:00.000",
+       "dateUtc": "2017-09-03T20:50:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T04:55:00.000",
+       "dateUtc": "2017-09-03T23:55:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-03T23:50:00.000",
+        "dateUtc": "2017-09-03T20:50:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T04:55:00.000",
+        "dateUtc": "2017-09-03T23:55:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-03T23:50:00.000",
+        "dateUtc": "2017-09-03T20:50:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-03T23:55:00.000",
+        "dateUtc": "2017-09-03T20:55:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-03T23:55:00.000",
+        "dateUtc": "2017-09-03T20:55:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T04:55:00.000",
+        "dateUtc": "2017-09-03T23:55:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T05:10:00.000",
+        "dateUtc": "2017-09-04T00:10:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T04:46:00.000",
+        "dateUtc": "2017-09-03T23:46:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T04:46:00.000",
+        "dateUtc": "2017-09-03T23:46:00.000Z"
+       }
+      },
+      "delays": {
+       "arrivalGateDelayMinutes": 15
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 185,
+       "airMinutes": 171
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "738",
+       "actualEquipmentIataCode": "73H",
+       "tailNumber": "VQ-BTJ"
+      }
+     },
+     {
+      "flightId": 932205248,
+      "carrierFsCode": "7R",
+      "flightNumber": "814",
+      "departureAirportFsCode": "LPK",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-03T23:55:00.000",
+       "dateUtc": "2017-09-03T20:55:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T04:25:00.000",
+       "dateUtc": "2017-09-03T23:25:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "Y",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-03T23:55:00.000",
+        "dateUtc": "2017-09-03T20:55:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T04:25:00.000",
+        "dateUtc": "2017-09-03T23:25:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-03T23:55:00.000",
+        "dateUtc": "2017-09-03T20:55:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-03T23:56:00.000",
+        "dateUtc": "2017-09-03T20:56:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-03T23:56:00.000",
+        "dateUtc": "2017-09-03T20:56:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T04:25:00.000",
+        "dateUtc": "2017-09-03T23:25:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T04:20:00.000",
+        "dateUtc": "2017-09-03T23:20:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T04:18:00.000",
+        "dateUtc": "2017-09-03T23:18:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T04:18:00.000",
+        "dateUtc": "2017-09-03T23:18:00.000Z"
+       }
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 150,
+       "airMinutes": 142
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "CR2",
+       "actualEquipmentIataCode": "CR2"
+      }
+     },
+     {
+      "flightId": 932221075,
+      "carrierFsCode": "FC",
+      "flightNumber": "151",
+      "departureAirportFsCode": "HEL",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-03T23:55:00.000",
+       "dateUtc": "2017-09-03T20:55:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T04:55:00.000",
+       "dateUtc": "2017-09-03T23:55:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-03T23:55:00.000",
+        "dateUtc": "2017-09-03T20:55:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T04:55:00.000",
+        "dateUtc": "2017-09-03T23:55:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-03T23:55:00.000",
+        "dateUtc": "2017-09-03T20:55:00.000Z"
+       },
+       "estimatedGateDeparture": {
+        "dateLocal": "2017-09-03T23:54:00.000",
+        "dateUtc": "2017-09-03T20:54:00.000Z"
+       },
+       "actualGateDeparture": {
+        "dateLocal": "2017-09-03T23:54:00.000",
+        "dateUtc": "2017-09-03T20:54:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:02:00.000",
+        "dateUtc": "2017-09-03T21:02:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:02:00.000",
+        "dateUtc": "2017-09-03T21:02:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T04:55:00.000",
+        "dateUtc": "2017-09-03T23:55:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T04:37:00.000",
+        "dateUtc": "2017-09-03T23:37:00.000Z"
+       },
+       "actualGateArrival": {
+        "dateLocal": "2017-09-04T04:37:00.000",
+        "dateUtc": "2017-09-03T23:37:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T04:34:00.000",
+        "dateUtc": "2017-09-03T23:34:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T04:34:00.000",
+        "dateUtc": "2017-09-03T23:34:00.000Z"
+       }
+      },
+      "codeshares": [
+       {
+        "fsCode": "AY",
+        "flightNumber": "151",
+        "relationship": "S"
+       }
+      ],
+      "flightDurations": {
+       "scheduledBlockMinutes": 180,
+       "blockMinutes": 163,
+       "airMinutes": 152,
+       "taxiOutMinutes": 8,
+       "taxiInMinutes": 3
+      },
+      "airportResources": {
+       "departureTerminal": "2"
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "E90",
+       "actualEquipmentIataCode": "E90",
+       "tailNumber": "OH-LKK"
+      }
+     },
+     {
+      "flightId": 932390465,
+      "carrierFsCode": "TK",
+      "flightNumber": "475",
+      "departureAirportFsCode": "IST",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-04T00:15:00.000",
+       "dateUtc": "2017-09-03T21:15:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T06:35:00.000",
+       "dateUtc": "2017-09-04T01:35:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-04T00:15:00.000",
+        "dateUtc": "2017-09-03T21:15:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T06:35:00.000",
+        "dateUtc": "2017-09-04T01:35:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-04T00:15:00.000",
+        "dateUtc": "2017-09-03T21:15:00.000Z"
+       },
+       "estimatedGateDeparture": {
+        "dateLocal": "2017-09-04T00:18:00.000",
+        "dateUtc": "2017-09-03T21:18:00.000Z"
+       },
+       "actualGateDeparture": {
+        "dateLocal": "2017-09-04T00:18:00.000",
+        "dateUtc": "2017-09-03T21:18:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:31:00.000",
+        "dateUtc": "2017-09-03T21:31:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:31:00.000",
+        "dateUtc": "2017-09-03T21:31:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T06:35:00.000",
+        "dateUtc": "2017-09-04T01:35:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T06:28:00.000",
+        "dateUtc": "2017-09-04T01:28:00.000Z"
+       },
+       "actualGateArrival": {
+        "dateLocal": "2017-09-04T06:28:00.000",
+        "dateUtc": "2017-09-04T01:28:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T06:22:00.000",
+        "dateUtc": "2017-09-04T01:22:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T06:22:00.000",
+        "dateUtc": "2017-09-04T01:22:00.000Z"
+       }
+      },
+      "delays": {
+       "departureGateDelayMinutes": 3
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 260,
+       "blockMinutes": 250,
+       "airMinutes": 231,
+       "taxiOutMinutes": 13,
+       "taxiInMinutes": 6
+      },
+      "airportResources": {
+       "departureTerminal": "I",
+       "departureGate": "202"
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "321",
+       "actualEquipmentIataCode": "32R",
+       "tailNumber": "TC-JSF"
+      }
+     },
+     {
+      "flightId": 932387994,
+      "carrierFsCode": "FV",
+      "flightNumber": "6401",
+      "departureAirportFsCode": "LED",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-04T00:25:00.000",
+       "dateUtc": "2017-09-03T21:25:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T05:05:00.000",
+       "dateUtc": "2017-09-04T00:05:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-04T00:25:00.000",
+        "dateUtc": "2017-09-03T21:25:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T05:05:00.000",
+        "dateUtc": "2017-09-04T00:05:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-04T00:25:00.000",
+        "dateUtc": "2017-09-03T21:25:00.000Z"
+       },
+       "estimatedGateDeparture": {
+        "dateLocal": "2017-09-04T00:18:00.000",
+        "dateUtc": "2017-09-03T21:18:00.000Z"
+       },
+       "actualGateDeparture": {
+        "dateLocal": "2017-09-04T00:18:00.000",
+        "dateUtc": "2017-09-03T21:18:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:29:00.000",
+        "dateUtc": "2017-09-03T21:29:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:29:00.000",
+        "dateUtc": "2017-09-03T21:29:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T05:05:00.000",
+        "dateUtc": "2017-09-04T00:05:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T04:48:00.000",
+        "dateUtc": "2017-09-03T23:48:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T04:48:00.000",
+        "dateUtc": "2017-09-03T23:48:00.000Z"
+       }
+      },
+      "codeshares": [
+       {
+        "fsCode": "SU",
+        "flightNumber": "6401",
+        "relationship": "S"
+       }
+      ],
+      "flightDurations": {
+       "scheduledBlockMinutes": 160,
+       "airMinutes": 139,
+       "taxiOutMinutes": 11
+      },
+      "airportResources": {
+       "departureTerminal": "1",
+       "departureGate": "D07"
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "319",
+       "actualEquipmentIataCode": "319",
+       "tailNumber": "EI-EYL"
+      }
+     },
+     {
+      "flightId": 932383364,
+      "carrierFsCode": "S7",
+      "flightNumber": "51",
+      "departureAirportFsCode": "DME",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-04T00:50:00.000",
+       "dateUtc": "2017-09-03T21:50:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T05:10:00.000",
+       "dateUtc": "2017-09-04T00:10:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-04T00:50:00.000",
+        "dateUtc": "2017-09-03T21:50:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T05:10:00.000",
+        "dateUtc": "2017-09-04T00:10:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-04T00:50:00.000",
+        "dateUtc": "2017-09-03T21:50:00.000Z"
+       },
+       "estimatedGateDeparture": {
+        "dateLocal": "2017-09-04T00:46:00.000",
+        "dateUtc": "2017-09-03T21:46:00.000Z"
+       },
+       "actualGateDeparture": {
+        "dateLocal": "2017-09-04T00:46:00.000",
+        "dateUtc": "2017-09-03T21:46:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:58:00.000",
+        "dateUtc": "2017-09-03T21:58:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T00:58:00.000",
+        "dateUtc": "2017-09-03T21:58:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T05:10:00.000",
+        "dateUtc": "2017-09-04T00:10:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T05:05:00.000",
+        "dateUtc": "2017-09-04T00:05:00.000Z"
+       },
+       "actualGateArrival": {
+        "dateLocal": "2017-09-04T05:05:00.000",
+        "dateUtc": "2017-09-04T00:05:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T04:56:00.000",
+        "dateUtc": "2017-09-03T23:56:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T04:56:00.000",
+        "dateUtc": "2017-09-03T23:56:00.000Z"
+       }
+      },
+      "codeshares": [
+       {
+        "fsCode": "QR",
+        "flightNumber": "5734",
+        "relationship": "L"
+       },
+       {
+        "fsCode": "B2",
+        "flightNumber": "51",
+        "relationship": "L"
+       },
+       {
+        "fsCode": "LY",
+        "flightNumber": "8921",
+        "relationship": "L"
+       },
+       {
+        "fsCode": "EK",
+        "flightNumber": "7905",
+        "relationship": "L"
+       },
+       {
+        "fsCode": "AB",
+        "flightNumber": "5948",
+        "relationship": "L"
+       },
+       {
+        "fsCode": "A3",
+        "flightNumber": "3586",
+        "relationship": "L"
+       },
+       {
+        "fsCode": "JL",
+        "flightNumber": "7177",
+        "relationship": "L"
+       }
+      ],
+      "flightDurations": {
+       "scheduledBlockMinutes": 140,
+       "blockMinutes": 139,
+       "airMinutes": 118,
+       "taxiOutMinutes": 12,
+       "taxiInMinutes": 9
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "319",
+       "actualEquipmentIataCode": "319",
+       "tailNumber": "VP-BTW"
+      }
+     },
+     {
+      "flightId": 932343907,
+      "carrierFsCode": "DP*",
+      "flightNumber": "515",
+      "departureAirportFsCode": "LED",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-04T01:30:00.000",
+       "dateUtc": "2017-09-03T22:30:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T06:15:00.000",
+       "dateUtc": "2017-09-04T01:15:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-04T01:30:00.000",
+        "dateUtc": "2017-09-03T22:30:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T06:15:00.000",
+        "dateUtc": "2017-09-04T01:15:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-04T01:30:00.000",
+        "dateUtc": "2017-09-03T22:30:00.000Z"
+       },
+       "estimatedGateDeparture": {
+        "dateLocal": "2017-09-04T01:36:00.000",
+        "dateUtc": "2017-09-03T22:36:00.000Z"
+       },
+       "actualGateDeparture": {
+        "dateLocal": "2017-09-04T01:36:00.000",
+        "dateUtc": "2017-09-03T22:36:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T01:45:00.000",
+        "dateUtc": "2017-09-03T22:45:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T01:45:00.000",
+        "dateUtc": "2017-09-03T22:45:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T06:15:00.000",
+        "dateUtc": "2017-09-04T01:15:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T06:04:00.000",
+        "dateUtc": "2017-09-04T01:04:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T06:02:00.000",
+        "dateUtc": "2017-09-04T01:02:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T06:02:00.000",
+        "dateUtc": "2017-09-04T01:02:00.000Z"
+       }
+      },
+      "delays": {
+       "departureGateDelayMinutes": 6
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 165,
+       "airMinutes": 137,
+       "taxiOutMinutes": 9
+      },
+      "airportResources": {
+       "departureTerminal": "1",
+       "departureGate": "D21"
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "738",
+       "actualEquipmentIataCode": "73H",
+       "tailNumber": "VQ-BTE"
+      }
+     },
+     {
+      "flightId": 932394354,
+      "carrierFsCode": "U6",
+      "flightNumber": "2954",
+      "departureAirportFsCode": "DYU",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-04T01:45:00.000",
+       "dateUtc": "2017-09-03T20:45:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T04:50:00.000",
+       "dateUtc": "2017-09-03T23:50:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "JY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-04T01:45:00.000",
+        "dateUtc": "2017-09-03T20:45:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T04:50:00.000",
+        "dateUtc": "2017-09-03T23:50:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-04T01:45:00.000",
+        "dateUtc": "2017-09-03T20:45:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T02:10:00.000",
+        "dateUtc": "2017-09-03T21:10:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T02:10:00.000",
+        "dateUtc": "2017-09-03T21:10:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T04:50:00.000",
+        "dateUtc": "2017-09-03T23:50:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T05:08:00.000",
+        "dateUtc": "2017-09-04T00:08:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T05:08:00.000",
+        "dateUtc": "2017-09-04T00:08:00.000Z"
+       }
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 185,
+       "airMinutes": 178
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "320",
+       "actualEquipmentIataCode": "320",
+       "tailNumber": "VP-BIE"
+      }
+     },
+     {
+      "flightId": 932387380,
+      "carrierFsCode": "SU",
+      "flightNumber": "1412",
+      "departureAirportFsCode": "SVO",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-04T01:50:00.000",
+       "dateUtc": "2017-09-03T22:50:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T06:10:00.000",
+       "dateUtc": "2017-09-04T01:10:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "RFJY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-04T01:50:00.000",
+        "dateUtc": "2017-09-03T22:50:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T06:10:00.000",
+        "dateUtc": "2017-09-04T01:10:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-04T01:50:00.000",
+        "dateUtc": "2017-09-03T22:50:00.000Z"
+       },
+       "estimatedGateDeparture": {
+        "dateLocal": "2017-09-04T01:48:00.000",
+        "dateUtc": "2017-09-03T22:48:00.000Z"
+       },
+       "actualGateDeparture": {
+        "dateLocal": "2017-09-04T01:48:00.000",
+        "dateUtc": "2017-09-03T22:48:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T01:54:00.000",
+        "dateUtc": "2017-09-03T22:54:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T01:54:00.000",
+        "dateUtc": "2017-09-03T22:54:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T06:10:00.000",
+        "dateUtc": "2017-09-04T01:10:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T05:53:00.000",
+        "dateUtc": "2017-09-04T00:53:00.000Z"
+       },
+       "actualGateArrival": {
+        "dateLocal": "2017-09-04T05:53:00.000",
+        "dateUtc": "2017-09-04T00:53:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T05:49:00.000",
+        "dateUtc": "2017-09-04T00:49:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T05:49:00.000",
+        "dateUtc": "2017-09-04T00:49:00.000Z"
+       }
+      },
+      "codeshares": [
+       {
+        "fsCode": "KL",
+        "flightNumber": "2906",
+        "relationship": "L"
+       },
+       {
+        "fsCode": "AF",
+        "flightNumber": "4950",
+        "relationship": "L"
+       }
+      ],
+      "flightDurations": {
+       "scheduledBlockMinutes": 140,
+       "blockMinutes": 125,
+       "airMinutes": 115,
+       "taxiOutMinutes": 6,
+       "taxiInMinutes": 4
+      },
+      "airportResources": {
+       "departureTerminal": "D",
+       "departureGate": "03"
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "32A",
+       "actualEquipmentIataCode": "32A",
+       "tailNumber": "VQ-BSG"
+      }
+     },
+     {
+      "flightId": 932284117,
+      "carrierFsCode": "U6",
+      "flightNumber": "386",
+      "departureAirportFsCode": "IKT",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-04T02:45:00.000",
+       "dateUtc": "2017-09-03T18:45:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T04:00:00.000",
+       "dateUtc": "2017-09-03T23:00:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "JY",
+       "restrictions": "",
+       "uplines": [
+        {
+         "fsCode": "PKC",
+         "flightId": 932284108
+        },
+        {
+         "fsCode": "VVO",
+         "flightId": 932284116
+        }
+       ],
+       "downlines": [
+        {
+         "fsCode": "LED",
+         "flightId": 932284120
+        }
+       ]
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-04T02:45:00.000",
+        "dateUtc": "2017-09-03T18:45:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T04:00:00.000",
+        "dateUtc": "2017-09-03T23:00:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-04T02:45:00.000",
+        "dateUtc": "2017-09-03T18:45:00.000Z"
+       },
+       "estimatedGateDeparture": {
+        "dateLocal": "2017-09-04T02:45:00.000",
+        "dateUtc": "2017-09-03T18:45:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T02:51:00.000",
+        "dateUtc": "2017-09-03T18:51:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T02:51:00.000",
+        "dateUtc": "2017-09-03T18:51:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T04:00:00.000",
+        "dateUtc": "2017-09-03T23:00:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T04:10:00.000",
+        "dateUtc": "2017-09-03T23:10:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T04:08:00.000",
+        "dateUtc": "2017-09-03T23:08:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T04:08:00.000",
+        "dateUtc": "2017-09-03T23:08:00.000Z"
+       }
+      },
+      "delays": {
+       "arrivalGateDelayMinutes": 10
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 255,
+       "airMinutes": 257
+      },
+      "airportResources": {
+       "arrivalGate": "17"
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "320",
+       "actualEquipmentIataCode": "320",
+       "tailNumber": "VP-BTZ"
+      }
+     },
+     {
+      "flightId": 932394306,
+      "carrierFsCode": "U6",
+      "flightNumber": "2986",
+      "departureAirportFsCode": "FRU",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-04T04:15:00.000",
+       "dateUtc": "2017-09-03T22:15:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T06:05:00.000",
+       "dateUtc": "2017-09-04T01:05:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "JY",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-04T04:15:00.000",
+        "dateUtc": "2017-09-03T22:15:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T06:05:00.000",
+        "dateUtc": "2017-09-04T01:05:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-04T04:15:00.000",
+        "dateUtc": "2017-09-03T22:15:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T06:11:00.000",
+        "dateUtc": "2017-09-04T00:11:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T06:11:00.000",
+        "dateUtc": "2017-09-04T00:11:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T06:05:00.000",
+        "dateUtc": "2017-09-04T01:05:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T07:35:00.000",
+        "dateUtc": "2017-09-04T02:35:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T07:35:00.000",
+        "dateUtc": "2017-09-04T02:35:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T07:35:00.000",
+        "dateUtc": "2017-09-04T02:35:00.000Z"
+       }
+      },
+      "delays": {
+       "arrivalGateDelayMinutes": 90
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 170,
+       "airMinutes": 144
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "320",
+       "actualEquipmentIataCode": "320",
+       "tailNumber": "VP-BQW"
+      }
+     },
+     {
+      "flightId": 932376059,
+      "carrierFsCode": "O7",
+      "flightNumber": "85",
+      "departureAirportFsCode": "REN",
+      "arrivalAirportFsCode": "SVX",
+      "departureDate": {
+       "dateLocal": "2017-09-04T07:30:00.000",
+       "dateUtc": "2017-09-04T02:30:00.000Z"
+      },
+      "arrivalDate": {
+       "dateLocal": "2017-09-04T09:45:00.000",
+       "dateUtc": "2017-09-04T04:45:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+       "flightType": "J",
+       "serviceClasses": "Y",
+       "restrictions": ""
+      },
+      "operationalTimes": {
+       "publishedDeparture": {
+        "dateLocal": "2017-09-04T07:30:00.000",
+        "dateUtc": "2017-09-04T02:30:00.000Z"
+       },
+       "publishedArrival": {
+        "dateLocal": "2017-09-04T09:45:00.000",
+        "dateUtc": "2017-09-04T04:45:00.000Z"
+       },
+       "scheduledGateDeparture": {
+        "dateLocal": "2017-09-04T07:30:00.000",
+        "dateUtc": "2017-09-04T02:30:00.000Z"
+       },
+       "estimatedRunwayDeparture": {
+        "dateLocal": "2017-09-04T07:30:00.000",
+        "dateUtc": "2017-09-04T02:30:00.000Z"
+       },
+       "actualRunwayDeparture": {
+        "dateLocal": "2017-09-04T07:30:00.000",
+        "dateUtc": "2017-09-04T02:30:00.000Z"
+       },
+       "scheduledGateArrival": {
+        "dateLocal": "2017-09-04T09:45:00.000",
+        "dateUtc": "2017-09-04T04:45:00.000Z"
+       },
+       "estimatedGateArrival": {
+        "dateLocal": "2017-09-04T09:25:00.000",
+        "dateUtc": "2017-09-04T04:25:00.000Z"
+       },
+       "estimatedRunwayArrival": {
+        "dateLocal": "2017-09-04T09:25:00.000",
+        "dateUtc": "2017-09-04T04:25:00.000Z"
+       },
+       "actualRunwayArrival": {
+        "dateLocal": "2017-09-04T09:25:00.000",
+        "dateUtc": "2017-09-04T04:25:00.000Z"
+       }
+      },
+      "flightDurations": {
+       "scheduledBlockMinutes": 135,
+       "airMinutes": 115
+      },
+      "flightEquipment": {
+       "scheduledEquipmentIataCode": "L4T",
+       "actualEquipmentIataCode": "L4T"
+      }
+     }
+    ]
+   }

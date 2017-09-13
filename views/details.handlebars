@@ -1,0 +1,32 @@
+<h1>Get from Redis Data Base</h1>
+<form class="form" action="/sendQuery" class="form-inline" method="POST">
+    <div class="form-group">
+        <div>
+            <h3>IATA*</h3>
+            <input type="text" class="form-control" placeholder="IATA (Airport code)" name="IATA" />
+        </div>
+        <div>
+            <h3>Local Date and Time*</h3>
+            <input type="date" class="form-control" placeholder="Date" name="date" />
+            <input type="time" class="form-control" name="date" placeholder="Time"/>
+            <label>Time</label>
+        </div>
+        <div class="radio-inline">
+            <label class="custom-control custom-radio">
+            <input id="departure" type="radio" name="ortradio" value="0" checked="checked"> 
+            <label for="departure">Departure</label>
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label class="custom-control custom-radio">
+            <input id="arrival" type="radio" name="ortradio" value="1"> 
+            <label for="arrival">Arrival</label>
+            </label>
+        </div>
+        <div>
+            <h3>Company code</h3>
+            <input type="text" class="form-control" placeholder="Company code" name="codeCompany" />
+        </div>
+        <input type="submit" value="Find" class="btn btn-primary" />
+    </div>
+</form>

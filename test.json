@@ -1,0 +1,123 @@
+//Deleted data for understanding JSON structure
+{
+ "request": {
+  "airport": {
+   "requestedCode": "svx",
+   "fsCode": "SVX"
+  },
+  "date": {
+   "year": "2017",
+   "month": "9",
+   "day": "3",
+   "interpreted": "2017-09-03"
+  },
+  "hourOfDay": {
+   "requested": "4",
+   "interpreted": 4
+  },
+  "numHours": {
+   "requested": "6",
+   "interpreted": 6
+  },
+  "utc": {
+   "requested": "false",
+   "interpreted": false
+  },
+  "codeType": {},
+  "maxFlights": {},
+  "extendedOptions": {},
+  "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/airport/status/svx/dep/2017/9/3/4"
+ },
+ "appendix": {
+  "airlines": [
+   {
+    "fs": "U6",
+    "iata": "U6",
+    "icao": "SVR",
+    "name": "Ural Airlines",
+    "active": true
+   }
+  ],
+  "airports": [
+   {
+    "fs": "SLY",
+    "iata": "SLY",
+    "icao": "USDD",
+    "name": "Salekhard Airport",
+    "city": "Salekhard",
+    "cityCode": "SLY",
+    "countryCode": "RU",
+    "countryName": "Russian Federation",
+    "regionName": "Europe",
+    "timeZoneRegionName": "Asia/Yekaterinburg",
+    "localTime": "2017-09-03T01:03:42.924",
+    "utcOffsetHours": 5,
+    "latitude": 66.590358,
+    "longitude": 66.591548,
+    "elevationFeet": 216,
+    "classification": 4,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/SLY?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/SLY?codeType=fs"
+   }
+  ],
+  "equipments": [
+   {
+    "iata": "CR2",
+    "name": "Canadair (Bombardier) Regional Jet 200",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": true
+   }
+  ]
+ },
+ "flightStatuses": [
+  {
+   "flightId": 932284056,
+   "carrierFsCode": "U6",
+   "flightNumber": "201",
+   "departureAirportFsCode": "SVX",
+   "arrivalAirportFsCode": "AAQ",
+   "departureDate": {
+    "dateLocal": "2017-09-03T07:00:00.000",
+    "dateUtc": "2017-09-03T02:00:00.000Z"
+   },
+   "arrivalDate": {
+    "dateLocal": "2017-09-03T08:10:00.000",
+    "dateUtc": "2017-09-03T05:10:00.000Z"
+   },
+   "status": "S",
+   "schedule": {
+    "flightType": "J",
+    "serviceClasses": "JY",
+    "restrictions": ""
+   },
+   "operationalTimes": {
+    "publishedDeparture": {
+     "dateLocal": "2017-09-03T07:00:00.000",
+     "dateUtc": "2017-09-03T02:00:00.000Z"
+    },
+    "publishedArrival": {
+     "dateLocal": "2017-09-03T08:10:00.000",
+     "dateUtc": "2017-09-03T05:10:00.000Z"
+    },
+    "scheduledGateDeparture": {
+     "dateLocal": "2017-09-03T07:00:00.000",
+     "dateUtc": "2017-09-03T02:00:00.000Z"
+    },
+    "scheduledGateArrival": {
+     "dateLocal": "2017-09-03T08:10:00.000",
+     "dateUtc": "2017-09-03T05:10:00.000Z"
+    }
+   },
+   "flightDurations": {
+    "scheduledBlockMinutes": 190
+   },
+   "flightEquipment": {
+    "scheduledEquipmentIataCode": "320",
+    "actualEquipmentIataCode": "320"
+   }
+  }
+ ]
+}
