@@ -1,14 +1,14 @@
 <h1>Get from Redis Data Base</h1>
-<form class="form" action="/sendQuery" class="form-inline" method="POST">
+<form class="form" action="/getFromRedis" class="form-inline" method="POST">
     <div class="form-group">
         <div>
             <h3>IATA*</h3>
-            <input type="text" class="form-control" placeholder="IATA (Airport code)" name="IATA" />
+            <input type="text" class="form-control" placeholder="IATA (Airport code)" name="IATA" required/>
         </div>
         <div>
             <h3>Local Date and Time*</h3>
-            <input type="date" class="form-control" placeholder="Date" name="date" />
-            <input type="time" class="form-control" name="date" placeholder="Time"/>
+            <input type="date" class="form-control" placeholder="Date" name="date" required />
+            <input type="time" class="form-control" name="time" placeholder="Time" required />
             <label>Time</label>
         </div>
         <div class="radio-inline">

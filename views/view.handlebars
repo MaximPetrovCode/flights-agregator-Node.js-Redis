@@ -1,0 +1,49 @@
+{{#if dep}}
+<h1>Departure {{#if airline}}for {{airline}} {{/if}} </h1>
+{{else}}
+<h1>Arrival {{#if airline}}for {{airline}} {{/if}}</h1>
+{{/if}} {{#if withoutCodeCompany}}
+<!--Destination (код) | Flight | Airline | Departure Schedule/Actual | Gate | Status-->
+{{#if startTime}}
+    {{#if endTime}}
+        <h5>Period <br/>
+            From: {{startTime}} <br/>
+            To: {{endTime}}) <br/>
+        </h5>
+    {{/if}}
+{{/if}}
+
+{{#each objects}}
+<ul class="list-group">
+    <li class="list-group-item">
+        <div class="col">
+            <p>Destination: {{destination}}</p>
+            {{#if origin}}
+            <p>Origin: {{origin}}</p>{{/if}}
+            <p>FlightNumber: {{flightNumber}}</p>
+            <p>Airline: {{airline}}</p>
+            <p>Date: {{date}}</p>
+            {{#if gate}}
+            <p>Gate: {{gate}}</p>{{/if}}
+            <p>Status: {{status}}</p>
+        </div>
+    </li>
+</ul>
+{{/each}} {{else}}
+<!--Date | Destination (код) | Flight | Departure Schedule/Actual | Gate | Status-->
+{{#each objects}}
+<ul class="list-group">
+    <li class="list-group-item">
+        <div class="col">
+            <p>Date: {{date}}</p>
+            <p>Destination: {{destination}}</p>
+            {{#if origin}}
+            <p>Origin: {{origin}}</p>{{/if}}
+            <p>FlightNumber: {{flightNumber}}</p>
+            {{#if gate}}
+            <p>Gate: {{gate}}</p>{{/if}}
+            <p>Status: {{status}}</p>
+        </div>
+    </li>
+</ul>
+{{/each}} {{/if}}

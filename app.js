@@ -30,6 +30,15 @@ client.on('connect', function (req, res, next) {
     console.log("Redis is connected!");
 });
 
+//counter departure id
+let idCounterDep = 0;
+//counter arrival id
+let idCounterArr = 0;
+
+app.listen(port, function (req, res) {
+    console.log('Server is listening on ' + port);
+});
+
 app.get('/', function (req, res) {
     res.render('main');
 });
@@ -42,15 +51,13 @@ app.get('/get/schedule', function (req, res, next) {
     res.render('details');
 });
 
-app.listen(port, function (req, res) {
-    console.log('Server is listening on ' + port);
-});
-
 app.post('/search', function (req, res) {
     let IATA = req.body.IATA;
     let codeCompany = req.body.codeCompany;
     let ortradio = req.body.ortradio;
+    let time = req.body.time;
     let date = new Date(req.body.date);
+    date = date.setTime(time);
 
     let datetimeUTC = {
         year: dateformat(date, 'yyyy', true),
@@ -73,88 +80,42 @@ app.post('/search', function (req, res) {
     //let counterID = 0;
 
     if (ortradio == 0) {
-        getDeparture(urlAPIdeparture);
+        getDeparture(urlAPIdeparture, registerFlightId);
+        console.log("Send departure url data: ", urlAPIdeparture);
     }
     else {
-        getArrival(urlAPIarrival);
+        getArrival(urlAPIarrival, registerFlightId);
+        console.log("Send arrival url data: ", urlAPIarrival);
     }
     res.redirect('/');
 });
 
-//I use Primuses to avoid "callback hell" and save code asynchronous :)
-app.post('/sendQuery', function (req, res, next) {
-    defineQueryId(req).then(getFromRedis);
-    res.render('details');
-});
-
-let counterID = new createCounterID();
-
-function createCounterID() {
-    let counter;
-    function plus() {
-        this.counter++;
-    }
-}
-
-function addToRedis(counterID, queryFields) {
-    counterID.plus();
-    client.hgetall('id:' + counterID, function (err, obj) { //check if hash already exists
-        if (!obj) {
-
-            client.HMSET('id:' + counterID, queryFields, function (err, reply) {
-                if (err) {
-                    console.log(err);
-                }
-                console.log(reply);
-            });
-
-            //Here function for adding data to DB
-            console.log("Added " + 'id:' + counterID);
-        }
-    });
-}
-
-function defineQueryId(req) {
-    return new Promise((resolve, reject) => {
-        // (ID = 0) If company code is not set
-        // (ID = 1) If company code is set
-        req.body.codeCompany == "" ? req.body.ID = 0 : req.body.ID = 1;
-        req.body.ID == 0 || req.body.ID == 1 ? resolve(req) : reject('Somothing is wrong... sorry... :(');
-    });
-}
-
-function getFromRedis(req) {
+app.post('/getFromRedis', function (req, res) {
     let IATA = req.body.IATA;
     let codeCompany = req.body.codeCompany;
     let ortradio = req.body.ortradio;
+    let time = req.body.time;
     let date = new Date(req.body.date);
+    //console.log("1)Date", date.toString());  //03:00:00 GMT+0300 (STD)
+    //console.log("2)Time", time.toString());
+    datetimeUTC = date.toString().replace("03:00:00", time.toString() + ":00");
+    //console.log("3)New ", datetimeUTC);
 
-    let datetimeUTC = {
-        year: dateformat(date, 'yyyy', true),
-        month: dateformat(date, 'm', true),
-        day: dateformat(date, 'd', true),
-        hour: dateformat(date, 'H', true),
-        minute: dateformat(date, 'M', true),
-        senond: dateformat(date, 's', true)
-    }
-
-    console.log("ID: " + req.body.ID);
-    //Destination (код) | Flight | Airline | Departure Schedule/Actual | Gate | Status
-    if (req.body.ID == 0) {
-        let queryFields = ['flightNumber', flightNumber, 'destination', arrivalAirportFsCode, 'date', dateDestination, 'gate', gate, 'status', status, 'airline', airline];
-        addToRedis(queryFields);
+    if (ortradio == 0) {
+        getData(req, res,'dep', IATA, datetimeUTC, codeCompany, getEveryId);
+        console.log('dep');
     }
     else {
-
+        getData(req, res,'arr', IATA, datetimeUTC, codeCompany, getEveryId);
+        console.log('arr');
     }
-}
 
-function getDeparture(urlAPIdeparture) {
-    request(urlAPIdeparture, function (error, response) {
+});
 
-        if (error) {
+function getDeparture(urlAPIdeparture, callback) {
+    request(urlAPIdeparture, function (error, response) {   //request to departure API
+        if (error)
             console.log(response.statusCode);
-        }
         else {
             let jsonData = JSON.parse(response.body);
             let arrFlghtStatuses = jsonData.flightStatuses
@@ -165,17 +126,23 @@ function getDeparture(urlAPIdeparture) {
                 // Departure Schedule/Actual | Gate | Status
                 // Airline|
 
+                let flightId = element.flightId;
                 let flightNumber = element.flightNumber;
                 let departureAirportCode = element.departureAirportFsCode;
                 let arrivalAirportFsCode = element.arrivalAirportFsCode;
-                let gate = element.airportResources.departureGate;
+                let gate = "No Gate";
+                if (element.hasOwnProperty('airportResources') !== false)
+                    gate = element.airportResources.departureGate;
                 let status = element.status;
                 let dateDestination = element.departureDate.dateLocal;
                 let airline = element.carrierFsCode;
-                let flightId = element.flightId;
+
+                //checking for existance
+                //callbackCheckExistance('dep:',idCounterDep,queryFields, addToRedis);
 
                 console.log(
                     "\nFlightId: " + flightId +
+                    "\nDeparture (код): " + departureAirportCode +
                     "\nDestination (код): " + arrivalAirportFsCode +
                     "\nFlight: " + flightNumber +
                     "\nDeparture Schedule/Actual (local): " + dateDestination +
@@ -184,17 +151,25 @@ function getDeparture(urlAPIdeparture) {
                     "\nAirline: " + airline
                 );
 
-                let queryFields = ['flightNumber', flightNumber, 'destination', arrivalAirportFsCode, 'date', dateDestination, 'gate', gate, 'status', status, 'airline', airline];
-                addToRedis(counterID, queryFields);
+                let queryFields = ['flightId', flightId, 'departureAirportCode', departureAirportCode, 'flightNumber', flightNumber, 'destination', arrivalAirportFsCode, 'date', dateDestination, 'gate', gate, 'status', status, 'airline', airline];
+                //Fixing undefined and null variable
+                for (var element in queryFields) {
+                    if (queryFields.hasOwnProperty(element)) {
+                        if (queryFields[element] == undefined || queryFields[element] == null) {
+                            queryFields[element] = "No Data";
+                            console.log(queryFields[element]);
+                        }
+                    }
+                }
 
+                callback('dep', queryFields);
             }, this);
         }
     });
 }
 
-function getArrival(urlAPIarrival) {
-    request(urlAPIarrival, function (error, response) {
-
+function getArrival(urlAPIarrival, callback) {
+    request(urlAPIarrival, function (error, response) { //request to arrival API
         if (error) {
             console.log(response.statusCode);
         }
@@ -202,12 +177,9 @@ function getArrival(urlAPIarrival) {
             let jsonData = JSON.parse(response.body);
             let arrFlghtStatuses = jsonData.flightStatuses;
             arrFlghtStatuses.forEach(function (element) {
-                //console.log(element);
-
                 // Date | Destination (код) | Flight | 
-                // Departure Schedule/Actual | Gate | Status
+                // Departure Schedule/Actual | Status
                 // Airline|
-
                 let flightNumber = element.flightNumber;
                 let departureAirportCode = element.departureAirportFsCode;
                 let arrivalAirportFsCode = element.arrivalAirportFsCode;
@@ -224,13 +196,171 @@ function getArrival(urlAPIarrival) {
                     "\nArrival: " + dateArrival +
                     //"\nGate: "+ gate +
                     "\nStatus: " + status +
-                    "\nAirline: " + airline
+                    "\nAirline: " + airline +
+                    "\nId: " + idCounterArr
                 );
 
-                let queryFields = ['flightNumber', flightNumber, 'origin', departureAirportCode, 'date', dateArrival,/*'gate',gate,*/'status', status, 'airline', airline];
-                addToRedis(flightId, queryFields);
+                let queryFields = ['flightId', flightId, 'flightNumber', flightNumber, 'origin', departureAirportCode, 'destination', arrivalAirportFsCode, 'date', dateArrival,/*'gate',gate,*/'status', status, 'airline', airline];
+                //Fixing undefined and null variable
+                for (var element in queryFields) {
+                    if (queryFields.hasOwnProperty(element)) {
+                        if (queryFields[element] == undefined || queryFields[element] == null) {
+                            queryFields[element] = "No Data";
+                            console.log(queryFields[element]);
 
+                        }
+                    }
+                }
+
+                callback('arr', queryFields);
             }, this);
         }
     });
+}
+
+function registerFlightId(prefix, queryFields) {
+    //let queryFields = ['flightId', flightId, 'flightNumber', flightNumber, 'destination', arrivalAirportFsCode, 'date', dateDestination, 'gate', gate, 'status', status, 'airline', airline];
+
+    //checking existance of flightId in Redis
+    client.get('flightId:' + queryFields[1] + ':' + prefix, function (err, checkId) {
+        if (!checkId) {
+            client.incr(prefix + ':nextId', function (err, id) {
+                if (id) {
+                    console.log('Id is ', id);
+                    client.HMSET(prefix + ':' + id, queryFields, function (err) {
+                        client.set('flightId:' + queryFields[1] + ':' + prefix, id);
+                    });
+                }
+            });
+        }
+        else {
+            console.log("flightId is already contains in Redis!");
+            return;
+        }
+    });
+}
+
+
+
+
+function getData(req, res, prefix, IATA, datetimeUTC, codeCompany, callbackGetEveryId) {
+    let idCouter = 1;
+    let tmp = true;
+    let objRender = [];
+    IATA = IATA.toUpperCase();
+
+    callbackGetEveryId(req, res,prefix, idCouter, IATA, datetimeUTC, codeCompany, objRender, selectFormat);
+}
+
+function getEveryId(req, res,prefix, idCouter, IATA, datetimeUTC, codeCompany, objRender, callbackSelectFormat) {
+    client.hgetall(prefix + ':' + idCouter, function (err, element) {
+        if (element == null) {
+            //Here's continue
+            callbackSelectFormat(req, res,objRender, IATA, datetimeUTC, codeCompany, prefix);
+        }
+
+        if (element !== null) {
+            //Defining departure or arrival construction
+            if (prefix == 'dep' && element.departureAirportCode == IATA) {
+                //console.log(element);
+                objRender.push(element);
+            }
+            else if (prefix == 'arr' && element.destination == IATA) {
+                objRender.push(element);
+            }
+
+            //Go to next 
+            idCouter++;
+            getEveryId(req, res,prefix, idCouter, IATA, datetimeUTC, codeCompany, objRender, selectFormat);
+        }
+    });
+}
+
+function selectFormat(req, res,objRender, IATA, datetimeUTC, codeCompany, prefix) {
+    //console.log(objRender);
+    if (codeCompany === '') {
+        //Destination (код) | Flight | Airline | Departure Schedule/Actual | Gate | Status
+        // +/- 4 часа
+        withoutCodeCompany(prefix, req, res,objRender, IATA, datetimeUTC, restrictedTimeDiapazone);
+    }
+    else {
+        //Date | Destination (код) | Flight | Departure Schedule/Actual | Gate | Status
+        // +/- 12 часов
+        withCodeCompany(prefix, req, res,objRender, IATA, datetimeUTC, codeCompany);
+    }
+}
+
+function withCodeCompany(prefix, req, res,objRender, IATA, datetimeUTC, codeCompany) {
+    let objResult = [];
+
+    objRender.forEach(function (element) {
+        if (element.airline == codeCompany.toUpperCase()){
+            //console.log(element);
+            objResult.push(element);
+        }
+        // Render result element!!!
+    }, this);
+
+
+    console.log(objResult);
+    if (prefix == 'dep'){
+        dep = true;
+        arr = false
+    } else{
+        dep = false;
+        arr = true
+    }
+
+    
+    let airlineCode = null;
+    if(objResult.length>0)
+        airlineCode = objResult[0].airline;
+
+    res.render('view',{objects: objResult, withCodeCompany, dep: dep, arr: arr, airline: airlineCode});
+}
+
+function withoutCodeCompany(prefix, req, res,objRender, IATA, datetimeUTC, callbackRestrictedTimeDiapazone) {
+    //console.log(datetimeUTC);
+    let date = {
+        year: dateformat(datetimeUTC, 'yyyy', true),
+        month: dateformat(datetimeUTC, 'm', true),
+        day: dateformat(datetimeUTC, 'd', true),
+        hour: dateformat(datetimeUTC, 'H', true),
+        minute: dateformat(datetimeUTC, 'M', true),
+        senond: dateformat(datetimeUTC, 's', true)
+    }
+
+    let startTime = new Date(Date.UTC(date.year, Number(date.month) - 1, date.day, Number(date.hour) - 4, date.minute));
+    //console.log(startTime, ":start time");
+    let endTime = new Date(Date.UTC(date.year, Number(date.month) - 1, date.day, Number(date.hour) + 4, date.minute));
+    //console.log(endTime, ":end time\n");
+
+
+    let objResult = [];
+
+    objRender.forEach(function (element) {
+        //callbackRestrictedTimeDiapazone(startTime, endTime, element);
+        time = new Date(Date.parse(element.date));
+        if (time > startTime && time < endTime){
+            //console.log(element);
+            objResult.push(element);
+        }
+    }, this);
+
+
+    console.log(objResult);
+    if (prefix == 'dep'){
+        dep = true;
+        arr = false
+    } else{
+        dep = false;
+        arr = true
+    }
+    res.render('view',{objects: objResult, withoutCodeCompany: true, dep: dep, arr: arr, startTime: startTime, endTime: endTime});
+}
+
+function restrictedTimeDiapazone(startTime, endTime, element) {
+    time = new Date(Date.parse(element.date));
+    if (time > startTime && time < endTime)
+        console.log(element);
 }
